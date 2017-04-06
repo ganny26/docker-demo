@@ -1,6 +1,4 @@
 cd /
-cd /Users/selva/git/docker-demo
-docker stop helloworld
-docker rm helloworld
-docker build -t hello-world /Users/selva
-docker run -d --name helloworld -p 80:80 -v /users/selva/docker-demo/src/:/var/wwe/html hello-world
+cd MyGit/docker-demo
+docker build -t docker-demo MyGit/docker-demo
+docker run -d --name docker-demo -p 5555:5555 -v MyGit/docker-demo/:/var/www/html docker-demosss
